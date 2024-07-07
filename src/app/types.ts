@@ -29,7 +29,7 @@ export interface TableBodyCell {
   code: number;
   data: string | Array<any>;
 }
-type Formatter = (param: any) => string;
+export type Formatter = (param: any) => string;
 export interface TableBodyRow extends Array<TableBodyCell> {}
 export interface Table {
   formatter: Array<Formatter | null>;
