@@ -1,5 +1,6 @@
 export interface Button {
   label: string;
+  clickHandler?: (event:React.MouseEvent) => {}
 }
 
 export interface List {
