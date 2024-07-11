@@ -1,26 +1,13 @@
 import {
   NAV_BTN,
-  SKILL_BTN,
-  SKILL_LIST,
   WORK_EXPERIENCE_TABLE,
 } from "./static_data";
 import Table from "./(components)/Table";
 import Button from "./(components)/Button";
-import ListItem from "./(components)/ListItem";
+import FilterableSkillList from "./(components)/FilterableSkillList";
 
 const navBtns = NAV_BTN.map((btn) => <Button key={btn.label} data={btn} />);
-const skillBtns = SKILL_BTN.map((btn) => <Button key={btn.label} data={btn} />);
-const skills = (selectedCode: number) => {
-  const selectedSkillList = SKILL_LIST.find(
-    (skill) => skill.code === selectedCode
-  );
-  if (!selectedSkillList) {
-    return;
-  }
-  return selectedSkillList.items.map((item) => (
-    <ListItem key={item.label} data={item} />
-  ));
-};
+
 
 export default function Home() {
   return (
@@ -34,8 +21,7 @@ export default function Home() {
 
         <section className="py-5">
           <h1 className="pb-5">Skill</h1>
-          <div className="flex pb-5">{skillBtns}</div>
-          <div className="flex">{skills(2)}</div>
+          <FilterableSkillList/>
         </section>
 
         <section className="py-5">

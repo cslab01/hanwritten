@@ -7,15 +7,15 @@ import TSIcon from "../../public/typescript.svg";
 import UI5Icon from "../../public/ui5.jpg";
 import VueIcon from "../../public/vue.svg";
 export const NAV_BTN: Button[] = [
-  { label: "Home" },
-  { label: "Build" },
-  { label: "Post" },
+  { label: "Home", code: 1 },
+  { label: "Build", code:2 },
+  { label: "Post", code:3 },
 ];
 export const SKILL_BTN: Button[] = [
-  { label: "Language" },
-  { label: "Framework" },
-  { label: "Cloud" },
-  { label: "Spoken language" },
+  { label: "Language", code:1 },
+  { label: "Framework",code:2 },
+  { label: "Cloud",code:3 },
+  { label: "Spoken language",code:4 },
 ];
 export const SKILL_LIST: List[] = [
   {
@@ -24,7 +24,7 @@ export const SKILL_LIST: List[] = [
     items: [
       { icon: JSIcon, label: "JavaScript" },
       { icon: TSIcon, label: "TypeScript" },
-      { icon: "", label: "" },
+      // { icon: "", label: "" },
     ],
   },
   {
@@ -41,8 +41,8 @@ export const SKILL_LIST: List[] = [
     label: "Cloud",
     items: [
       { icon: AWSIcon, label: "AWS" },
-      { icon: "", label: "" },
-      { icon: "", label: "" },
+      // { icon: "", label: "" },
+      // { icon: "", label: "" },
     ],
   },
   {

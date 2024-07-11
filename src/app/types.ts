@@ -1,6 +1,7 @@
 export interface Button {
+  code: number;
   label: string;
-  clickHandler?: (event:React.MouseEvent) => {}
+  clickHandler?: (param:any) => void
 }
 
 export interface List {
