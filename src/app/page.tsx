@@ -1,13 +1,9 @@
-import {
-  NAV_BTN,
-  WORK_EXPERIENCE_TABLE,
-} from "./static_data";
-import Table from "./(components)/Table";
+import { NAV_BTN } from "./static_data";
 import Button from "./(components)/Button";
 import FilterableSkillList from "./(components)/FilterableSkillList";
+import FilterableTable from "./(components)/FilterableTable";
 
 const navBtns = NAV_BTN.map((btn) => <Button key={btn.label} data={btn} />);
-
 
 export default function Home() {
   return (
@@ -21,15 +17,12 @@ export default function Home() {
 
         <section className="py-5">
           <h1 className="pb-5">Skill</h1>
-          <FilterableSkillList/>
+          <FilterableSkillList />
         </section>
 
         <section className="py-5">
           <h1>Work Experience</h1>
-          <div className="flex justify-end">
-            <input type="search" placeholder="Search" />
-          </div>
-          <Table tableProp={WORK_EXPERIENCE_TABLE} />
+          <FilterableTable/>
         </section>
       </main>
     </div>

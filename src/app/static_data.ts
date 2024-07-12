@@ -74,7 +74,7 @@ export const WORK_EXPERIENCE_TABLE: Table = {
     [
       { code: 1, data: "project 2" },
       { code: 2, data: [new Date("2021-08"), new Date("2021-12")] },
-      { code: 3, data: ["React", "Redux"] },
+      { code: 3, data: ["React", "SAP UI5"] },
       { code: 4, data: "web developer" },
     ],
   ],
