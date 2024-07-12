@@ -1,4 +1,4 @@
-import { Button, List, Table } from "./types";
+import { NavButton, Button, List, Table } from "./types";
 import { dateRangeFormatter, concatArrFormatter } from "./utils";
 import AWSIcon from "../../public/aws.svg";
 import JSIcon from "../../public/javascript.svg";
@@ -6,16 +6,16 @@ import ReactIcon from "../../public/react.svg";
 import TSIcon from "../../public/typescript.svg";
 import UI5Icon from "../../public/ui5.jpg";
 import VueIcon from "../../public/vue.svg";
-export const NAV_BTN: Button[] = [
-  { label: "Home", code: 1 },
-  { label: "Build", code:2 },
-  { label: "Post", code:3 },
+export const NAV_BTN: NavButton[] = [
+  { label: "Home", code: 1, href: "/" },
+  { label: "Build", code: 2, href: "/build" },
+  { label: "Post", code: 3, href: "/post" },
 ];
 export const SKILL_BTN: Button[] = [
-  { label: "Language", code:1 },
-  { label: "Framework",code:2 },
-  { label: "Cloud",code:3 },
-  { label: "Spoken language",code:4 },
+  { label: "Language", code: 1 },
+  { label: "Framework", code: 2 },
+  { label: "Cloud", code: 3 },
+  { label: "Spoken language", code: 4 },
 ];
 export const SKILL_LIST: List[] = [
   {

@@ -1,3 +1,8 @@
+export interface NavButton {
+  code: number;
+  label: string;
+  href: string
+}
 export interface Button {
   code: number;
   label: string;
