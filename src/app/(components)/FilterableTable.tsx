@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { WORK_EXPERIENCE_TABLE } from "../static_data";
+import { WORK_EXPERIENCE_TABLE } from "../../../public/static/static_data";
 import Table from "./Table";
 type Props = {};
 

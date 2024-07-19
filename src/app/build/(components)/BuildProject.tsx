@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BuildProject as BuildProjectType } from "@/app/types";
-import GithubIcon from "../../../../public/github-mark.png";
+import GithubIcon from "../../../../public/image/github-mark.png";
 
 export default function BuildProject({ prop }: { prop: BuildProjectType }) {
   return (

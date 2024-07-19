@@ -1,12 +1,18 @@
-import { NavButton, Button, List, Table, BuildProject } from "./types";
-import { dateRangeFormatter, concatArrFormatter } from "./utils";
-import AWSIcon from "../../public/aws.svg";
-import JSIcon from "../../public/javascript.svg";
-import ReactIcon from "../../public/react.svg";
-import TSIcon from "../../public/typescript.svg";
-import UI5Icon from "../../public/ui5.jpg";
-import VueIcon from "../../public/vue.svg";
-import PersonalSite from "../../public/personal_site.png";
+import {
+  NavButton,
+  Button,
+  List,
+  Table,
+  BuildProject,
+} from "../../src/app/types";
+import { dateRangeFormatter, concatArrFormatter } from "../../src/app/utils";
+import AWSIcon from "../../public/image/aws.svg";
+import JSIcon from "../../public/image/javascript.svg";
+import ReactIcon from "../../public/image/react.svg";
+import TSIcon from "../../public/image/typescript.svg";
+import UI5Icon from "../../public/image/ui5.jpg";
+import VueIcon from "../../public/image/vue.svg";
+import PersonalSite from "../../public/image/personal_site.png";
 export const NAV_BTN: NavButton[] = [
   { label: "Home", code: 1, href: "/" },
   { label: "Build", code: 2, href: "/build" },

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import { SKILL_BTN, SKILL_LIST } from "../static_data";
+import { SKILL_BTN, SKILL_LIST } from "../../../public/static/static_data";
 import { Button as ButtonType } from "../types";
 import ListItem from "./ListItem";
 import Button from "./Button";

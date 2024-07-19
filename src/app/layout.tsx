@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import { NAV_BTN } from "./static_data";
+import "../../public/css/globals.css";
+import { NAV_BTN } from "../../public/static/static_data";
 import NavButton from "./(components)/NavButton";
 
 const navBtns = NAV_BTN.map((btn) => <NavButton key={btn.code} prop={btn} />);
