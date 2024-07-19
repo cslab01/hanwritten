@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
+import BuildProject from "./(components)/BuildProject";
+import { BUILD_PROJECT } from "../static_data";
 
-type Props = {}
-
-export default function Build({}: Props) {
-  return (
-    <div>Build page</div>
-  )
+export default function Build() {
+  return BUILD_PROJECT.map((pj) => <BuildProject key={pj.title} prop={pj} />);
 }

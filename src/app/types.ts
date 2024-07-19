@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface NavButton {
   code: number;
   label: string;
@@ -42,4 +44,12 @@ export interface Table {
   formatter: Array<Formatter | null>;
   header: Array<TableHeadCell>;
   body: Array<TableBodyRow>;
+}
+
+export interface BuildProject {
+  title: string;
+  description: string;
+  github: string;
+  img: StaticImageData;
+  imgAlt: string
 }

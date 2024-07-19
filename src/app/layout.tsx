@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="p-10 flex-col justify-content-center">
+      <body className="px-20 py-10 flex-col justify-content-center">
         <header className="flex justify-center">{navBtns}</header>
         <main>{children}</main>
       </body>

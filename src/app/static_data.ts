@@ -1,4 +1,4 @@
-import { NavButton, Button, List, Table } from "./types";
+import { NavButton, Button, List, Table, BuildProject } from "./types";
 import { dateRangeFormatter, concatArrFormatter } from "./utils";
 import AWSIcon from "../../public/aws.svg";
 import JSIcon from "../../public/javascript.svg";
@@ -6,6 +6,7 @@ import ReactIcon from "../../public/react.svg";
 import TSIcon from "../../public/typescript.svg";
 import UI5Icon from "../../public/ui5.jpg";
 import VueIcon from "../../public/vue.svg";
+import PersonalSite from "../../public/personal_site.png";
 export const NAV_BTN: NavButton[] = [
   { label: "Home", code: 1, href: "/" },
   { label: "Build", code: 2, href: "/build" },
@@ -79,3 +80,20 @@ export const WORK_EXPERIENCE_TABLE: Table = {
     ],
   ],
 };
+
+export const BUILD_PROJECT: BuildProject[] = [
+  {
+    title: "Personal website",
+    description:
+      "My personal site where I document my portfolio and know-how posts. Once in a while, I would love to share my thoughts on technical and non-technical topics.",
+    github: "https://github.com/cslab01/hanwritten",
+    img: PersonalSite,
+    imgAlt: "Personal website image",
+  },
+  // {
+  //   title: ,
+  //   description: ,
+  //   github: ,
+  //   img:
+  // },
+];
